@@ -1,0 +1,33 @@
+*{ 
+    scroll-behavior: smooth;
+} 
+
+.cart a i {
+    display: none; /* Hide the font-awesome icon */
+  }
+  
+  .cart a {
+    position: relative;
+  }
+  
+  .cart a::before {
+    content: "";
+    display: block;
+    width: 60px; /* Adjust the width as per your image size */
+    height: 60px; /* Adjust the height as per your image size */
+    background-image: url('/assets/images/cart-icon.png'); /* Add your cart image path here */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+  }
+  
